@@ -47,8 +47,7 @@ function filter($word) {
 }
 
 function getWords($content) {
-    $content = preg_replace('/[^а-яА-Я ]/u', ' ', $content);
-    $content = preg_replace('/[^\S\r\n]+/', ' ', trim($content));
+    $content = preg_replace('/[^а-яА-Я ]|[^\S\r\n]+/u', ' ', $content);
     $content = mb_strtolower($content);
     $counted = array_count_values(explode(' ', $content));
     $counted = array_filter($counted, function($word) {
