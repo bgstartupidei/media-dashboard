@@ -21,6 +21,14 @@ $sites = [
         'url' => 'https://trud.bg/',
         'name' => 'Труд'
     ],
+    [
+        'url' => 'http://sega.bg/',
+        'name' => 'Сега'
+    ],
+    [
+        'url' => 'http://www.mediapool.bg/',
+        'name' => 'Mediapool'
+    ],
 ];
 
 $blacklist = [
