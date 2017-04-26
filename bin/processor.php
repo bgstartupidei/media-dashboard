@@ -29,6 +29,10 @@ $sites = [
         'url' => 'http://www.mediapool.bg/',
         'name' => 'Mediapool'
     ],
+    [
+        'url' => 'https://dariknews.bg/',
+        'name' => 'Darik News'
+    ],
 ];
 
 $blacklist = [
