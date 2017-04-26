@@ -37,13 +37,15 @@ $blacklist = [
     'снимки',
     'или',
     'през',
+    'блиц',
+    'часа',
+    'фотогалерия',
 ];
+
+const MAX_WORDS = 20;
 
 function fetch($url) {
     return file_get_contents($url);
-}
-
-function filter($word) {
 }
 
 function getWords($content) {
@@ -55,7 +57,7 @@ function getWords($content) {
         return mb_strlen($word) > 2 && !in_array($word, $blacklist);
     }, ARRAY_FILTER_USE_KEY);
     arsort($counted);
-    return $counted;
+    return array_slice($counted, 0, MAX_WORDS);
 }
 
 $result = [];
