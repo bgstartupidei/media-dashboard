@@ -71,6 +71,7 @@ function fetch($url) {
 }
 
 function getWords($content) {
+    $content = strip_tags($content);
     $content = preg_replace('/[^а-яА-Я ]|[^\S\r\n]+/u', ' ', $content);
     $content = mb_strtolower($content);
     $counted = array_count_values(explode(' ', $content));
