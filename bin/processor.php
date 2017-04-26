@@ -16,7 +16,11 @@ $sites = [
     [
         'url' => 'https://www.24chasa.bg/',
         'name' => '24 часа'
-    ]
+    ],
+    [
+        'url' => 'https://trud.bg/',
+        'name' => 'Труд'
+    ],
 ];
 
 $blacklist = [
