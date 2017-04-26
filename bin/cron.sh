@@ -1,1 +1,1 @@
-php processor.php > ../pubic_html/latest.json; cp ../pubic_html/latest.json ../pubic_html/data/$(date "+%Y.%m.%d-%H.%M.%S").json
+php processor.php > ../public_html/latest.json; cp ../public_html/latest.json ../public_html/data/$(date "+%Y.%m.%d-%H.%M.%S").json
